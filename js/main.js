@@ -6,24 +6,6 @@ jQuery(function($) {'use strict';
 	});
 
 
-
-
-			/* ----------------------------------------------------------- */
-	/*  2. Fixed Top Menubar
-	/* ----------------------------------------------------------- */
-
-	 //  $(window).scroll(function () {
-  //     //if you hard code, then use console
-  //     //.log to determine when you want the 
-  //     //nav bar to stick.  
-  //     console.log($(window).scrollTop())
-  //   if ($(window).scrollTop() > 60) {
-  //     $('.navbar').addClass('navbar-fixed-top');
-  //   }
-  //   if ($(window).scrollTop() < 61) {
-  //     $('.navbar').removeClass('navbar-fixed-top');
-  //   }
-  // });
 		// For fixed top bar
    $(window).scroll(function(){
 
@@ -248,23 +230,6 @@ jQuery(function($) {'use strict';
 		social_tools: false
 	});
 
-	//Google Map
-	var latitude = $('#google-map').data('latitude');
-	var longitude = $('#google-map').data('longitude');
-	function initialize_map() {
-		var myLatlng = new google.maps.LatLng(latitude,longitude);
-		var mapOptions = {
-			zoom: 14,
-			scrollwheel: false,
-			center: myLatlng
-		};
-		var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-		var marker = new google.maps.Marker({
-			position: myLatlng,
-			map: map
-		});
-	}
-	google.maps.event.addDomListener(window, 'load', initialize_map);
 
 });
 
