@@ -1,1 +1,0 @@
-# scmed.github.io

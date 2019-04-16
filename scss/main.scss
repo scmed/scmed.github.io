@@ -1,7 +1,7 @@
 
 @import '_typography';
 @import '_history';
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700,100italic,300italic,400italic,700italic);
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700,100italic,300italic,400italic,700italic);*/
 
 %gradiant {
   background: linear-gradient(90deg, rgb(44,170,179) 0%, rgb(44,140,179) 100%);
@@ -15,8 +15,8 @@
 .title{
   display: inline-block;
   font-size: 24px;
-  font-weight: 480; 
-  font-family: 'Roboto', sans-serif;
+  font-weight: 280; 
+  font-family: $primaryFont;
   text-align: center;
   color: darken($major_color,20%);
   text-transform: uppercase;
@@ -145,7 +145,9 @@
     width: 100%;
     height: 100%;
     color: #fff;
-
+    .carousel-content{
+      max-width: 70vw;
+    }    
     //Styling
     h2 {
       margin-top: 180px;
@@ -156,6 +158,9 @@
       >span {
         color: $major_color;
       }
+    }
+    p{
+      font: $adFont;
     }
     .btn {
       margin-top: 10px;
@@ -231,9 +236,22 @@
   h2 {
     margin-top: 0;
   }
+  .filename{
+    font: $adFont;
+  }
 
   .btn {
-    margin-top: 40px;
+    display: inline-block;
+    height: 64px;
+    margin-top: 0px;
+    i{
+      font-size: 24px;
+      line-height: 36px;
+    }
+      span{
+        padding-left: 20px;
+        color: $text_color;
+  }
   }
 }
 
@@ -253,6 +271,21 @@
     >span {
       color: $major_color;
     }
+  }
+}
+
+
+
+//About
+#about {
+  padding: 50px 0;
+  img{
+    max-height: 400px;
+  }
+  .chiefbox {
+    margin-top: 0px;
+    font: $adFont;
+    border: 0px solid red;
   }
 }
 
@@ -325,6 +358,8 @@
     }
   }
 }
+
+
 
 //Portfolio
 #portfolio {
