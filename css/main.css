@@ -907,6 +907,11 @@ figure:hover p {
   box-shadow: none;
 }
 
+.panel-group .imgcontent {
+  height: 500px;
+  border: 1px soliid red;
+}
+
 .nav.main-tab {
   background: #eee;
   border-bottom: 3px solid #222534;

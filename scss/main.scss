@@ -682,6 +682,14 @@
   }
 }
 
+//Panel-group
+.panel-group{
+  .imgcontent{
+    height: 500px;
+    border: 1px soliid red;
+  }
+}
+
 //Tab
 .nav {
   &.main-tab {
